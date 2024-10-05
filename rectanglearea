@@ -1,0 +1,39 @@
+//JAVA PROGRAM TO CREATE A CLASS RECTANGLE WITH WIDTH AND HEIGHT
+//ATTRIBUTES CALCULATE THE AREA AND PERIMETER OF THE RECTANGLE.
+import java.util.Scanner;
+class Rectangle
+{
+private double width;
+private double height;
+public void Area(double width,double height)
+{
+this.width=width;
+this.height=height;
+double area=width*height;
+System.out.println("THE AREA OF THE RECTANGLE IS = "+area);
+}
+
+public void  Perimeter(double width,double height)
+{
+this.width=width;
+this.height=height;
+double perimeter=2*(width+height);
+System.out.println("THE PERIMETER OF THE RECTANGLE IS = "+perimeter);
+}
+}
+class rectanglearea
+{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+double w,h;
+System.out.println("ENTER THE WIDTH");
+w=sc.nextDouble();
+
+System.out.println("ENTER THE HEIGHT");
+h=sc.nextDouble();
+Rectangle r=new Rectangle();
+r.Area(w,h);
+r.Perimeter(w,h);
+}
+}
