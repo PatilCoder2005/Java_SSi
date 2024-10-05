@@ -1,0 +1,67 @@
+*/write a java program to create a class called dog the 
+a name and breed attribute, create two instances of dog class, set their attributes using 
+the constructor and modify the attributes using the setter methods and print the updated values/*
+
+
+
+class Dog {
+    private String name;
+    private String breed;
+
+  
+    public Dog(String name, String breed) {
+        this.name = name;
+        this.breed = breed;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+ 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+ 
+    public String getBreed() {
+        return breed;
+    }
+
+    
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    
+    public void displayInfo() {
+        System.out.println("Dog Name: " + name + ", Breed: " + breed);
+    }
+}
+
+
+public class DogTest {
+    public static void main(String[] args) {
+  
+        Dog dog1 = new Dog("Moti", "Golden Retriever");
+        Dog dog2 = new Dog("Max", "Bulldog");
+
+       
+        System.out.println("Initial Values:");
+        dog1.displayInfo();
+        dog2.displayInfo();
+
+      
+        dog1.setName("Tommy");
+        dog1.setBreed("Labrador");
+
+        dog2.setName("Rocky");
+        dog2.setBreed("German Shepard");
+
+        
+        System.out.println("Updated Values:");
+        dog1.displayInfo();
+        dog2.displayInfo();
+    }
+}
